@@ -1,0 +1,213 @@
+<!-- IDEA: modal modal-stake-peak -->
+<div class="modal fade fixed-right" id="modal-stake-peak" tabindex="-1" role="dialog" aria-labelledby="modal-stake-peak" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+    <div class="modal-content">
+      <div class="modal-body p-lg-0">
+        <div class="d-inline-block w-lg-60">
+          <button class="btn btn-link text-white position-absolute mt-n4 ml-n4 ml-lg-0 mt-lg-0" type="button" name="button" data-dismiss="modal" aria-label="Close">
+            <i class="fe fe-arrow-left h2"></i>
+          </button>
+          <div class="row justify-content-center">
+            <div class="col col-lg-8">
+              <!-- Heading -->
+              <h1 class="display-4 text-center my-5">
+                Stake Peak
+              </h1>
+
+              <div class="card mb-6">
+                <div class="card-body">
+                  <div class="form-group">
+                    <label>Amount to stake</label>
+                    <div class="input-group mb-2">
+                      <input type="text" class="form-control form-control-lg" placeholder="0.00" aria-label="" aria-describedby="">
+                      <div class="input-group-append">
+                        <button class="btn border" type="button">Max</button>
+                      </div>
+                    </div>
+                    <small class="form-text text-secondary mb-4">1,000.0000 PEAK available &bull; <a href="https://www.bibox.com/fullExchange?coinPair=PEAK_USDT" target="_blank">Buy</a></small>
+                  </div>
+                  <div class="form-group">
+                    <label>Lock-up in day</label>
+                    <div class="input-group input-group-lg mb-2">
+                      <input type="text" class="form-control border-right-0 pr-0" placeholder="0" aria-label="lockup" id="lockup">
+                      <div class="input-group-append">
+                        <button class="btn border" type="button">Max</button>
+                      </div>
+                    </div>
+                    <small class="form-text text-secondary mb-4">Min. x days / Max. 1,000 days</small>
+                  </div>
+                  <div class="table-responsive d-block d-lg-none mb-4">
+                    <table class="table mb-0">
+                      <thead>
+                        <tr>
+                          <th class="px-0 bg-transparent border-0 text-white">Order details</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="px-0 border-0">
+                            <strong>Bigger Bonus</strong>
+                            <button type="button" class="btn btn-link p-0 text-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                              <i class="fe fe-info h4"></i>
+                            </button>
+                          </td>
+                          <td class="px-0 text-right border-0 text-success">
+                            0.010000%
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="px-0 border-0">
+                            <strong>Longer Bonus</strong>
+                            <button type="button" class="btn btn-link p-0 text-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                              <i class="fe fe-info h4"></i>
+                            </button>
+                          </td>
+                          <td class="px-0 text-right border-0 text-success">
+                            36.48%
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="px-0 border-0">
+                            <strong>Referral bonus</strong>
+                            <button type="button" class="btn btn-link p-0 text-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                              <i class="fe fe-info h4"></i>
+                            </button>
+                          </td>
+                          <td class="px-0 text-right border-0 text-success">
+                            3.00%
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="px-0 border-0">
+                            <strong>APY rewards</strong>
+                            <button type="button" class="btn btn-link p-0 text-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                              <i class="fe fe-info h4"></i>
+                            </button>
+                          </td>
+                          <td class="px-0 text-right border-0 text-success">
+                            36.49%
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="px-0 border-0">
+                            <strong>PEAK rewards</strong><br>
+                          </td>
+                          <td class="px-0 text-right border-0 text-success">
+                            364.902086
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="px-0 border-top border-top-1 border-white "><strong>Total value after staking</strong></td>
+                          <td colspan="2" class="px-0 text-right border-top border-top-1 border-white">
+                            <span class="h3 text-success">1364.902086 PEAK</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <a class="btn btn-primary btn-lg btn-block" href="rewards.html">Stake</a>
+                </div>
+              </div>
+
+              @@include("faq.html")
+              <!-- Text -->
+              <p class="text-secondary small">
+                By tapping or clicking 'Stake', you accept the following terms of service.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="d-lg-inline-block w-lg-40 position-fixed d-none">
+          <div class="bg-white vh-100 p-4">
+            <div class="row justify-content-center">
+              <div class="col-10">
+                <div class="table-responsive">
+                  <table class="table mb-0 text-dark">
+                    <thead>
+                      <tr>
+                        <th class="px-0 bg-transparent border-0 text-dark">Order details</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="px-0 border-0">
+                          <strong>Bigger Bonus</strong>
+                          <button type="button" class="btn btn-link p-0 text-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                            <i class="fe fe-info h4"></i>
+                          </button>
+                        </td>
+                        <td class="px-0 text-right border-0 text-success">
+                          0.010000%
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="px-0 border-0">
+                          <strong>Longer Bonus</strong>
+                          <button type="button" class="btn btn-link p-0 text-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                            <i class="fe fe-info h4"></i>
+                          </button>
+                        </td>
+                        <td class="px-0 text-right border-0 text-success">
+                          36.48%
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="px-0 border-0">
+                          <strong>Referral bonus</strong>
+                          <button type="button" class="btn btn-link p-0 text-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                            <i class="fe fe-info h4"></i>
+                          </button>
+                        </td>
+                        <td class="px-0 text-right border-0 text-success">
+                          3.00%
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="px-0 border-0">
+                          <strong>APY rewards</strong>
+                          <button type="button" class="btn btn-link p-0 text-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                            <i class="fe fe-info h4"></i>
+                          </button>
+                        </td>
+                        <td class="px-0 text-right border-0 text-success">
+                          36.49%
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="px-0 border-0">
+                          <strong>PEAK rewards</strong>
+                        </td>
+                        <td class="px-0 text-right border-0 text-success">
+                          364.902086
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="px-0 border-0">
+                          <strong>Referral level</strong>
+                          <button type="button" class="btn btn-link p-0 text-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                            <i class="fe fe-info h4"></i>
+                          </button>
+                          <br>
+                          <small>Add <strong>230 PEAK</strong> to unlock level 3</small>
+                        </td>
+                        <td class="px-0 text-right border-0 text-success">
+                          2
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="px-0 border-top border-top-1 border-secondary"><strong>Total value after staking</strong></td>
+                        <td colspan="2" class="px-0 text-right border-top border-top-1 border-secondary">
+                          <span class="h3 text-success">1364.902086 PEAK</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- / modal -->

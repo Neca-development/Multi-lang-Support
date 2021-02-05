@@ -1,0 +1,76 @@
+<nav class="navbar navbar-vertical fixed-left navbar-expand-md @@if(navColor=='default' && !demoMode){navbar-light}@@if(navColor=='inverted' &&!demoMode){navbar-dark}@@if(navColor=='vibrant' && !demoMode){navbar-dark navbar-vibrant}" id="sidebar">
+  <div class="container-fluid">
+
+    <!-- Toggler -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebarCollapse" aria-controls="sidebarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- User (xs) -->
+    <div class="navbar-user d-md-none">
+      <a href="@@webRoot/invite.html" class="d-block mr-4">
+        <!-- Title -->
+        <h6 class="text-uppercase text-secondary mb-2">
+          Rank
+        </h6>
+        <!-- Heading -->
+        <span class="h4 mb-0 text-white">
+          Star<span class="d-none d-lg-block">&nbsp;&bull;&nbsp;6,500,000&nbsp;DSV</span>
+        </span>
+      </a>
+      <div class="btn btn-white btn-block p-0 pr-3 rounded-xl text-left">
+        <div class="avatar avatar-sm avatar-online mr-2">
+          <img src="@@webRoot/assets/img/avatars/profiles/eth-address.png" class="avatar-img rounded-circle" alt="...">
+        </div>
+        manager.eth
+      </div>
+
+    </div>
+
+    <!-- Collapse -->
+    <div class="collapse navbar-collapse" id="sidebarCollapse">
+      <a class="navbar-brand text-white text-left mb-5" href="@@webRoot/dashboard.html">
+        <div class="avatar mr-2">
+          <img src="@@webRoot/assets/img/logo.png" class="avatar-img rounded" alt="...">
+        </div>
+        <span class="d-inline-block">PEAKDEFI</span>
+      </a>
+
+      <!-- Navigation -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="@@webRoot/dashboard.html">
+            <i class="fe fe-activity"></i> Portfolio
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="@@webRoot/rewards.html">
+            <i class="fe fe-dollar-sign"></i> Rewards
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="@@webRoot/invite.html">
+            <i class="fe fe-users"></i> Invite friends <span class="badge badge-soft-success ml-2">Get $$$</span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- Divider -->
+      <hr class="navbar-divider my-3">
+      <!-- Navigation -->
+      <ul class="navbar-nav mb-md-4">
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.gitbook.com/" target="_blank">
+            Help
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" target="_blank">
+             Terms of service
+          </a>
+        </li>
+      </ul>
+
+    </div> <!-- / .navbar-collapse -->
+
+  </div>
+</nav>

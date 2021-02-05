@@ -1,0 +1,247 @@
+<!-- IDEA: modal createFund -->
+<div class="modal fade fixed-right" id="createFund" tabindex="-1" role="dialog" aria-labelledby="createFund" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+    <div class="modal-content">
+      <div class="modal-body p-lg-0">
+        <div class="d-inline-block w-lg-60">
+          <button class="btn btn-link text-white position-absolute mt-n4 ml-n4 ml-lg-0 mt-lg-0" type="button" name="button" data-dismiss="modal" aria-label="Close">
+            <i class="fe fe-arrow-left h2"></i>
+          </button>
+          <div class="row justify-content-center">
+            <div class="col col-lg-8">
+              <!-- Heading -->
+              <h1 class="display-4 text-center my-5">
+                Create new fund
+              </h1>
+              <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <strong>Access not allowed!</strong> Only a whitelisted address can access this feature!
+
+                <!-- Button -->
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+
+              </div>
+
+              <div class="card mb-4">
+                <div class="card-body">
+                  <div class="form-row mb-4">
+                    <div class="form-group col-12 col-lg-6 mb-4 mb-lg-0">
+                      <label>Fund name</label>
+                      <input type="text" class="form-control form-control-lg" placeholder="" aria-label="" aria-describedby="">
+                    </div>
+                    <div class="form-group col-12 col-lg-6 mb-0">
+                      <label>Share ticker</label>
+                      <input type="text" class="form-control form-control-lg" placeholder="" aria-label="" aria-describedby="">
+                    </div>
+                  </div>
+                  <div class="form-row mb-4">
+                    <div class="form-group col-12 col-lg-6 mb-4 mb-lg-0">
+                      <label>Management phase</label>
+                      <div class="input-group mb-2">
+                        <input type="number" class="form-control form-control-lg" placeholder="0" aria-label="" aria-describedby="">
+                        <div class="input-group-append">
+                          <span class="input-group-text rounded-right border-left-0" id="basic-addon3">Days</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group col-12 col-lg-6 mb-0">
+                      <label>Intermission phase</label>
+                      <div class="input-group mb-2">
+                        <input type="number" class="form-control form-control-lg" placeholder="0" aria-label="" aria-describedby="">
+                        <div class="input-group-append">
+                          <span class="input-group-text rounded-right border-left-0" id="basic-addon3">Days</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-row mb-4">
+                    <div class="form-group col-12 col-lg-6 mb-4 mb-lg-0">
+                      <label>Management fee/cycle</label>
+                      <div class="input-group mb-2">
+                        <input type="number" class="form-control form-control-lg" placeholder="0.00" aria-label="" aria-describedby="">
+                        <div class="input-group-append">
+                          <span class="input-group-text rounded-right border-left-0" id="basic-addon3">%</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group col-12 col-lg-6 mb-0">
+                      <label>Success fee/cycle</label>
+                      <div class="input-group mb-2">
+                        <input type="number" class="form-control form-control-lg" placeholder="0.00" aria-label="" aria-describedby="">
+                        <div class="input-group-append">
+                          <span class="input-group-text rounded-right border-left-0" id="basic-addon3">%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-row mb-4">
+                    <div class="form-group col-12 col-lg-6 mb-4 mb-lg-0">
+                      <label>Reputation token name</label>
+                      <input type="text" class="form-control form-control-lg" placeholder="" aria-label="" aria-describedby="">
+                    </div>
+                    <div class="form-group col-12 col-lg-6 mb-0">
+                      <label>Reputation token ticker</label>
+                      <input type="text" class="form-control form-control-lg" placeholder="" aria-label="" aria-describedby="">
+                    </div>
+                  </div>
+                  <div class="form-row mb-4">
+                    <div class="form-group col-12 col-lg-6 mb-4 mb-lg-0">
+                      <label>Rep. token price (DAI)</label>
+                      <div class="input-group mb-2">
+                        <input type="text" class="form-control form-control-lg" value="0.00" placeholder="0.00" aria-label="" aria-describedby="">
+                        <div class="input-group-append">
+                          <span class="input-group-text rounded-right border-left-0" id="basic-addon3">DAI</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group col-12 col-lg-6 mb-0">
+                      <label>Lot size</label>
+                      <div class="input-group mb-2">
+                        <input type="text" class="form-control form-control-lg" value="0.00" placeholder="0.00" aria-label="" aria-describedby="">
+                        <div class="input-group-append">
+                          <span class="input-group-text rounded-right border-left-0" id="basic-addon3">KRO</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-row mb-4">
+                    <div class="form-group col-12 col-lg-6 mb-4 mb-lg-0">
+                      <label>Dead manager period</label>
+                      <div class="input-group mb-2">
+                        <input type="text" class="form-control form-control-lg" value="0" placeholder="60" aria-label="" aria-describedby="">
+                        <div class="input-group-append">
+                          <span class="input-group-text rounded-right border-left-0" id="basic-addon3">Day</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group col-12 col-lg-6 mb-0">
+                      <label>Huge manager's loss thresold</label>
+                      <div class="input-group mb-2">
+                        <input type="text" class="form-control form-control-lg" value="0.00" placeholder="25.00" aria-label="" aria-describedby="">
+                        <div class="input-group-append">
+                          <span class="input-group-text rounded-right border-left-0" id="basic-addon3">%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-row mb-4">
+                    <div class="form-group col-12 col-lg-6 mb-4 mb-lg-0">
+                      <label>Whitelist</label><br>
+                      <div class="custom-control custom-radio custom-control-inline"><input class="custom-control-input" id="yes" name="yes" type="radio"><label class="custom-control-label" for="Yes">Yes</label></div>
+                      <div class="custom-control custom-radio custom-control-inline"><input class="custom-control-input" id="no" name="no" type="radio"><label class="custom-control-label" for="No">No</label></div>
+                    </div>
+                    <div class="form-group col-12 col-lg-6 mb-0">
+                      <label>Stablecoin</label><br>
+                    <div class="custom-control custom-radio custom-control-inline"><input class="custom-control-input" id="yes" name="DAI" type="radio"><label class="custom-control-label" for="DAI">DAI</label></div>
+                    <div class="custom-control custom-radio custom-control-inline"><input class="custom-control-input" id="no" name="USDC" type="radio"><label class="custom-control-label" for="USDC">USDC</label></div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="mb-3">Tradeable assets</div>
+                    <div class="custom-control custom-checkbox mb-3">
+                      <input type="checkbox" class="custom-control-input" id="customCheck1">
+                      <label class="custom-control-label" for="customCheck1">ABC &bull; Asset name</label>
+                    </div>
+                    <div class="custom-control custom-checkbox mb-3">
+                      <input type="checkbox" class="custom-control-input" id="customCheck2">
+                      <label class="custom-control-label" for="customCheck2">ABC &bull; Asset name</label>
+                    </div>
+                    <div class="custom-control custom-checkbox mb-3">
+                      <input type="checkbox" class="custom-control-input" id="customCheck3">
+                      <label class="custom-control-label" for="customCheck3">ABC &bull; Asset name</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-4">
+                <div class="card-header">
+                  <!-- Title -->
+                  <h4 class="card-header-title">
+                    Managers whitelist
+                  </h4>
+                </div>
+                <div class="card-body">
+                  <div class="list-group list-group-flush">
+                    <div class="list-group-item">
+                      <div class="row align-items-center">
+                        <div class="col-auto">
+                          <!-- Title -->
+                          <h5 class="mb-0">
+                            0x1df..0e507
+                          </h5>
+                        </div>
+                        <div class="col-auto ml-auto">
+                          <button class="btn btn-sm btn-white" type="button" name="button">Delete</button>
+                        </div>
+                      </div> <!-- / .row -->
+                    </div>
+                  </div>
+                  <div class="list-group list-group-flush">
+                    <div class="list-group-item">
+                      <div class="row align-items-center">
+                        <div class="col-auto">
+                          <!-- Title -->
+                          <h5 class="mb-0">
+                            0x1df..0e507
+                          </h5>
+                        </div>
+                        <div class="col-auto ml-auto">
+                          <button class="btn btn-sm btn-white" type="button" name="button">Delete</button>
+                        </div>
+                      </div> <!-- / .row -->
+                    </div>
+                  </div>
+                  <div class="list-group list-group-flush">
+                    <div class="list-group-item">
+                      <div class="row align-items-center">
+                        <div class="col-auto">
+                          <!-- Title -->
+                          <h5 class="mb-0">
+                            0x1df..0e507
+                          </h5>
+                        </div>
+                        <div class="col-auto ml-auto">
+                          <button class="btn btn-sm btn-white" type="button" name="button">Delete</button>
+                        </div>
+                      </div> <!-- / .row -->
+                    </div>
+                  </div>
+                </div>
+                <!-- / .card-body -->
+                <div class="card-footer">
+                  <div class="row align-items-center">
+                    <div class="col">
+                      <!-- Input -->
+                      <textarea class="form-control form-control-flush form-control-auto" data-toggle="autosize" rows="1" placeholder="Add whitelisted address" style="overflow: hidden; overflow-wrap: break-word; height: 24px;"></textarea>
+                    </div>
+                    <div class="col-auto">
+                      <!-- Button -->
+                      <button class="btn btn-sm btn-white">
+                        Add
+                      </button>
+                    </div>
+                  </div>
+                  <!-- / .row -->
+                </div>
+                <!-- / .card-footer -->
+              </div>
+
+              <a class="btn btn-primary btn-lg btn-block mb-6" href="#metamask">Continue</a>
+
+            </div>
+          </div>
+        </div>
+        <div class="d-lg-inline-block w-lg-40 position-fixed d-none">
+          <div class="bg-white vh-100 p-4">
+            <div class="row justify-content-center">
+              <div class="col-10">
+                <img class="img-fluid" src="@@webRoot/assets/img/illustrations/placeholder.svg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- / modal -->
