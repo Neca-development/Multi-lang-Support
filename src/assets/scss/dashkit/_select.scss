@@ -1,0 +1,47 @@
+.select {
+  position: relative;
+
+  &-value {
+    height: 44px;
+    width: 46px;
+    display: flex;
+    align-items: center;
+    background-color: #242526;
+    border: 1px solid #949495;
+    justify-content: space-around;
+    cursor: pointer;
+  }
+
+  &-dropdown {
+    display: none;
+  }
+
+  &.active {
+    & .select-value {
+      background-color: transparent;
+    }
+
+    & .select-dropdown {
+      width: 100%;
+      border-radius: 20px;
+      background-color: #131415;
+      border: 1px solid rgba($white, 0.2);
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      z-index: 5;
+
+      & p {
+        cursor: pointer;
+        line-height: 44px;
+        text-align: center;
+        margin: 0;
+
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+}

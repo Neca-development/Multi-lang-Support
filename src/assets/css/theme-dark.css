@@ -2720,7 +2720,7 @@ input[type="button"].btn-block {
   left: 0;
   z-index: -1;
   width: 1rem;
-  height: 1.20312rem;
+  height: 1.20313rem;
   opacity: 0; }
   .custom-control-input:checked ~ .custom-control-label::before {
     color: #FFFFFF;
@@ -2746,7 +2746,7 @@ input[type="button"].btn-block {
   cursor: pointer; }
   .custom-control-label::before {
     position: absolute;
-    top: 0.20312rem;
+    top: 0.20313rem;
     left: -1.5rem;
     display: block;
     width: 1rem;
@@ -2757,7 +2757,7 @@ input[type="button"].btn-block {
     border: #B1C2D9 solid 0; }
   .custom-control-label::after {
     position: absolute;
-    top: 0.20312rem;
+    top: 0.20313rem;
     left: -1.5rem;
     display: block;
     width: 1rem;
@@ -2801,7 +2801,7 @@ input[type="button"].btn-block {
     pointer-events: all;
     border-radius: 0.5625rem; }
   .custom-switch .custom-control-label::after {
-    top: 0.20312rem;
+    top: 0.20313rem;
     left: -3.5rem;
     width: 1.125rem;
     height: 1.125rem;
@@ -3883,7 +3883,7 @@ input[type="button"].btn-block {
   display: flex;
   height: 1rem;
   overflow: hidden;
-  font-size: 0.70312rem;
+  font-size: 0.70313rem;
   background-color: #949495;
   border-radius: 200px; }
 
@@ -8489,7 +8489,7 @@ a.text-white:hover, a.text-white:focus {
 
 .custom-control-circle .custom-control-label::after,
 .custom-control-circle .custom-control-label::before {
-  top: 0.01562rem;
+  top: 0.01563rem;
   left: -1.875rem;
   width: 1.375rem;
   height: 1.375rem;
@@ -9837,8 +9837,8 @@ a.text-white:hover, a.text-white:focus {
   padding-right: 0.75rem;
   overflow: visible; }
   .navbar-vertical-sm.navbar-expand-xs .navbar-brand {
-    padding-top: 0.45312rem;
-    padding-bottom: 1.20312rem; }
+    padding-top: 0.45313rem;
+    padding-bottom: 1.20313rem; }
   .navbar-vertical-sm.navbar-expand-xs .navbar-brand-img {
     width: auto;
     max-height: 1.5rem; }
@@ -9873,8 +9873,8 @@ a.text-white:hover, a.text-white:focus {
     padding-right: 0.75rem;
     overflow: visible; }
     .navbar-vertical-sm.navbar-expand-sm .navbar-brand {
-      padding-top: 0.45312rem;
-      padding-bottom: 1.20312rem; }
+      padding-top: 0.45313rem;
+      padding-bottom: 1.20313rem; }
     .navbar-vertical-sm.navbar-expand-sm .navbar-brand-img {
       width: auto;
       max-height: 1.5rem; }
@@ -9909,8 +9909,8 @@ a.text-white:hover, a.text-white:focus {
     padding-right: 0.75rem;
     overflow: visible; }
     .navbar-vertical-sm.navbar-expand-md .navbar-brand {
-      padding-top: 0.45312rem;
-      padding-bottom: 1.20312rem; }
+      padding-top: 0.45313rem;
+      padding-bottom: 1.20313rem; }
     .navbar-vertical-sm.navbar-expand-md .navbar-brand-img {
       width: auto;
       max-height: 1.5rem; }
@@ -9945,8 +9945,8 @@ a.text-white:hover, a.text-white:focus {
     padding-right: 0.75rem;
     overflow: visible; }
     .navbar-vertical-sm.navbar-expand-lg .navbar-brand {
-      padding-top: 0.45312rem;
-      padding-bottom: 1.20312rem; }
+      padding-top: 0.45313rem;
+      padding-bottom: 1.20313rem; }
     .navbar-vertical-sm.navbar-expand-lg .navbar-brand-img {
       width: auto;
       max-height: 1.5rem; }
@@ -9981,8 +9981,8 @@ a.text-white:hover, a.text-white:focus {
     padding-right: 0.75rem;
     overflow: visible; }
     .navbar-vertical-sm.navbar-expand-xl .navbar-brand {
-      padding-top: 0.45312rem;
-      padding-bottom: 1.20312rem; }
+      padding-top: 0.45313rem;
+      padding-bottom: 1.20313rem; }
     .navbar-vertical-sm.navbar-expand-xl .navbar-brand-img {
       width: auto;
       max-height: 1.5rem; }
@@ -11398,6 +11398,39 @@ a:focus, button:focus {
 
 .select2-selection__placeholder {
   color: #95AAC9; }
+
+.select {
+  position: relative; }
+  .select-value {
+    height: 44px;
+    width: 46px;
+    display: flex;
+    align-items: center;
+    background-color: #242526;
+    border: 1px solid #949495;
+    justify-content: space-around;
+    cursor: pointer; }
+  .select-dropdown {
+    display: none; }
+  .select.active .select-value {
+    background-color: transparent; }
+  .select.active .select-dropdown {
+    width: 100%;
+    border-radius: 20px;
+    background-color: #131415;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 5; }
+    .select.active .select-dropdown p {
+      cursor: pointer;
+      line-height: 44px;
+      text-align: center;
+      margin: 0; }
+      .select.active .select-dropdown p:hover {
+        color: #2C7BE5; }
 
 .btn-white, .btn-light {
   color: #FFFFFF;
