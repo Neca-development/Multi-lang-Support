@@ -1,9 +1,7 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    @@include("partials/head.html", {
-      "title": "About PEAKDEFI"
-    })
+    @@include("partials/head.html", { "title": "About PEAKDEFI" })
   </head>
   <body>
     @@include("partials/modals.html")
@@ -13,30 +11,43 @@
     ================================================== -->
     <div class="main-content bg-white">
       <div class="bg-ellipses bg-dark-curved pb-4 pb-lg-0">
-
         <!-- HEADER -->
         <div class="header">
           <div class="container py-5 py-lg-6">
-
             <!-- Body -->
             <div class="header-body border-0">
               <div class="row justify-content-center text-center">
                 <div class="col col-lg-8">
-                  <h1 class="display-2 d-none d-lg-block text-white">Vision and Mission</h1>
-                  <h1 class="display-4 d-block d-lg-none text-white">Vision and Mission</h1>
-                  <p class="lead text-secondary">The vision of PEAKDEFI is to enable everybody on the planet to grow their wealth, no matter what position they are in at the moment. <br>To give everybody the same chance the solution has to be decentralized, easy to understand and easily accessible. That's the mission at PEAKDEFI.</p>
-              </div> <!-- / .col -->
+                  <h1
+                    class="display-2 d-none d-lg-block text-white"
+                    tkey="visionMissionTitle"
+                  ></h1>
+                  <h1
+                    class="display-4 d-block d-lg-none text-white"
+                    tkey="visionMissionTitle"
+                  ></h1>
+                  <p
+                    class="lead text-secondary"
+                    tkey="visionMissionSubtitle"
+                  ></p>
+                </div>
+                <!-- / .col -->
+              </div>
             </div>
-            </div> <!-- / .header-body -->
+            <!-- / .header-body -->
           </div>
-        </div> <!-- / .header -->
+        </div>
+        <!-- / .header -->
       </div>
       <!-- IDEA: team -->
       <div class="container">
         <div class="row justify-content-center mb-6">
           <div class="col-12 col-lg-8 text-center">
-            <h1 class="display-3 d-none d-lg-block text-dark">Team</h1>
-            <h1 class="d-block d-lg-none text-dark">Team</h1>
+            <h1
+              class="display-3 d-none d-lg-block text-dark"
+              tkey="teamTitile"
+            ></h1>
+            <h1 class="d-block d-lg-none text-dark" tkey="teamTitile"></h1>
           </div>
         </div>
         <div class="row justify-content-center">
@@ -46,40 +57,35 @@
               <div class="card mb-6 mb-md-3">
                 <div class="card-body">
                   <span class="avatar avatar-xl card-avatar card-avatar-top">
-                    <img src="@@webRoot/assets/img/avatars/profiles/team-serj.webp" class="avatar-img rounded-circle border border-4 border-card" alt="">
+                    <img
+                      src="@@webRoot/assets/img/avatars/profiles/team-serj.webp"
+                      class="avatar-img rounded-circle border border-4 border-card"
+                      alt=""
+                    />
                   </span>
-                  <h2 class="card-title text-center">
-                    Sergej Heck
-                  </h2>
-                  <small class="text-center d-block">Initiator</small>
-                  <p class="card-text text-muted mt-4">
-                    Sergej is a successful author, global marketing expert and blockchain entrepreneur. He is the owner of <a href="https://blockchain-hero.com/">blockchain-hero.com</a> and <a href="https://www.coinkurier.de/">coinkurier.de</a>, two platforms and crypto magazines which educate people about the unlimited possibilities of blockchain technology.</p>
-                </div>
-                <div class="card-footer border border-0 text-center">
-                  <a href="https://twitter.com/sergejheck?lang=de" class="btn btn-white">
-                    <span class="fe fe-twitter text-primary"></span>
-                  </a>
-                  <a href="https://www.linkedin.com/in/sergej-heck/" class="btn btn-white">
-                    <span class="fe fe-linkedin text-primary"></span>
-                  </a>
-                </div>
-              </div>
-              <!-- Card -->
-              <div class="card mb-6 mb-md-3 ">
-                <div class="card-body">
-                  <span class="avatar avatar-xl card-avatar card-avatar-top">
-                    <img src="@@webRoot/assets/img/avatars/profiles/team-a-sq.jpg" class="avatar-img rounded-circle border border-4 border-card" alt="" alt="">
-                  </span>
-                  <h2 class="card-title text-center">
-                    Benjamin Bendig
-                  </h2>
-                  <small class="text-center d-block">Tech</small>
-                  <p class="card-text text-muted mt-4">
-                    Benjamin is a highly skilled Developer who worked as lead developer at Bitwala in the past. Since then he’s been the cofounder and CTO of another startup and now is looking forward to apply his learnings to help kickstart PEAKDEFI.
+                  <h2 class="card-title text-center" tkey="sergeiName"></h2>
+                  <small class="text-center d-block" tkey="sergeiRole"></small>
+                  <p class="card-text text-muted mt-4" tkey="sergeiPOne">
+                    <a href="https://blockchain-hero.com/"
+                      >blockchain-hero.com&nbsp;</a
+                    >
+                    <span tkey="sergeiPTwo"></span>
+                    <a href="https://www.coinkurier.de/">coinkurier.de&nbsp;</a
+                    >,
+                    <span tkey="sergeiPThree"></span>
                   </p>
                 </div>
                 <div class="card-footer border border-0 text-center">
-                  <a href="https://www.linkedin.com/in/ben-bendig-74688a110" class="btn btn-white">
+                  <a
+                    href="https://twitter.com/sergejheck?lang=de"
+                    class="btn btn-white"
+                  >
+                    <span class="fe fe-twitter text-primary"></span>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/sergej-heck/"
+                    class="btn btn-white"
+                  >
                     <span class="fe fe-linkedin text-primary"></span>
                   </a>
                 </div>
@@ -88,18 +94,47 @@
               <div class="card mb-6 mb-md-3">
                 <div class="card-body">
                   <span class="avatar avatar-xl card-avatar card-avatar-top">
-                    <img src="@@webRoot/assets/img/avatars/profiles/team-c-sq.png" class="avatar-img rounded-circle border border-4 border-card">
+                    <img
+                      src="@@webRoot/assets/img/avatars/profiles/team-a-sq.jpg"
+                      class="avatar-img rounded-circle border border-4 border-card"
+                      alt=""
+                      alt=""
+                    />
                   </span>
-                  <h2 class="card-title text-center">
-                    Jonas Mehmood
-                  </h2>
-                  <small class="text-center d-block">Marketing</small>
-                  <p class="card-text text-muted mt-4">
-                    Jonas is an expert in Social Media Marketing and has an advanced knowledge in the Blockchain Space. He knows exactly how to interact with his target group and gain more reach.
-                  </p>
+                  <h2 class="card-title text-center" tkey="benjaminName"></h2>
+                  <small
+                    class="text-center d-block"
+                    tkey="benjaminRole"
+                  ></small>
+                  <p class="card-text text-muted mt-4" tkey="benjaminP"></p>
                 </div>
                 <div class="card-footer border border-0 text-center">
-                  <a href="https://www.linkedin.com/in/sarahneidle" class="btn btn-white">
+                  <a
+                    href="https://www.linkedin.com/in/ben-bendig-74688a110"
+                    class="btn btn-white"
+                  >
+                    <span class="fe fe-linkedin text-primary"></span>
+                  </a>
+                </div>
+              </div>
+              <!-- Card -->
+              <div class="card mb-6 mb-md-3">
+                <div class="card-body">
+                  <span class="avatar avatar-xl card-avatar card-avatar-top">
+                    <img
+                      src="@@webRoot/assets/img/avatars/profiles/team-c-sq.png"
+                      class="avatar-img rounded-circle border border-4 border-card"
+                    />
+                  </span>
+                  <h2 class="card-title text-center" tkey="jonasName"></h2>
+                  <small class="text-center d-block" tkey="jonasRole"></small>
+                  <p class="card-text text-muted mt-4" tkey="jonasP"></p>
+                </div>
+                <div class="card-footer border border-0 text-center">
+                  <a
+                    href="https://www.linkedin.com/in/sarahneidle"
+                    class="btn btn-white"
+                  >
                     <span class="fe fe-linkedin text-primary"></span>
                   </a>
                 </div>
@@ -110,17 +145,20 @@
               <div class="card mb-6 mb-md-3">
                 <div class="card-body">
                   <span class="avatar avatar-xl card-avatar card-avatar-top">
-                    <img src="@@webRoot/assets/img/avatars/profiles/araton.jpg" class="avatar-img rounded-circle border border-4 border-card">
+                    <img
+                      src="@@webRoot/assets/img/avatars/profiles/araton.jpg"
+                      class="avatar-img rounded-circle border border-4 border-card"
+                    />
                   </span>
-                  <h2 class="card-title text-center">
-                    Ararat Tonoyan
-                  </h2>
-                  <small class="text-center d-block">Solidity Engineer</small>
-                  <p class="card-text text-muted mt-4">
-                    Ararat is a web and blockchain specialist who worked on many projects in the DeFi space. He has a great understanding for architectural solutions and microservices for blockchain</p>
+                  <h2 class="card-title text-center" tkey="araratName"></h2>
+                  <small class="text-center d-block" tkey="araratRole"></small>
+                  <p class="card-text text-muted mt-4" tkey="araratP"></p>
                 </div>
                 <div class="card-footer border border-0 text-center">
-                  <a href="https://www.linkedin.com/in/araton95/" class="btn btn-white">
+                  <a
+                    href="https://www.linkedin.com/in/araton95/"
+                    class="btn btn-white"
+                  >
                     <span class="fe fe-linkedin text-primary"></span>
                   </a>
                 </div>
@@ -129,38 +167,43 @@
               <div class="card mb-6 mb-md-3">
                 <div class="card-body">
                   <span class="avatar avatar-xl card-avatar card-avatar-top">
-                    <img src="@@webRoot/assets/img/avatars/profiles/oksana-pylypenko.jpeg" class="avatar-img rounded-circle border border-4 border-card">
+                    <img
+                      src="@@webRoot/assets/img/avatars/profiles/oksana-pylypenko.jpeg"
+                      class="avatar-img rounded-circle border border-4 border-card"
+                    />
                   </span>
-                  <h2 class="card-title text-center">
-                    Oksana Pylypenko
-                  </h2>
-                  <small class="text-center d-block">iOS Developer</small>
-                  <p class="card-text text-muted mt-4">
-                    Oksana has worked in the IT industry since 2013 and developed in this time many mobile business applications mainly on iOS platforms. She has experience in OOP, design patterns, RESTful web services, pixel perfect UI design and other practices for high quality and production ready software.
-                  </p>
+                  <h2 class="card-title text-center" tkey="oksanaName"></h2>
+                  <small class="text-center d-block" tkey="oksanaRole"></small>
+                  <p class="card-text text-muted mt-4" tkey="oksanaP"></p>
                 </div>
                 <div class="card-footer border border-0 text-center">
-                  <a href="https://www.linkedin.com/in/oksana-pylypenko/" class="btn btn-white">
+                  <a
+                    href="https://www.linkedin.com/in/oksana-pylypenko/"
+                    class="btn btn-white"
+                  >
                     <span class="fe fe-linkedin text-primary"></span>
                   </a>
                 </div>
               </div>
               <!-- Card -->
-              <div class="card mb-6 mb-md-3 ">
+              <div class="card mb-6 mb-md-3">
                 <div class="card-body">
                   <span class="avatar avatar-xl card-avatar card-avatar-top">
-                    <img src="@@webRoot/assets/img/avatars/profiles/Denys-Roman-R.jpeg" class="avatar-img rounded-circle border border-4 border-card" alt="Romain Arandel">
+                    <img
+                      src="@@webRoot/assets/img/avatars/profiles/Denys-Roman-R.jpeg"
+                      class="avatar-img rounded-circle border border-4 border-card"
+                      alt="Romain Arandel"
+                    />
                   </span>
-                  <h2 class="card-title text-center">
-                    Denys Roman R.
-                  </h2>
-                  <small class="text-center d-block">Android Developer</small>
-                  <p class="card-text text-muted mt-4">
-                    Denys is a DeFi enthusiast with a great experience in mobile development for Android by working on many dApps in the past.
-                  </p>
+                  <h2 class="card-title text-center" tkey="denisName"></h2>
+                  <small class="text-center d-block" tkey="denisRole"></small>
+                  <p class="card-text text-muted mt-4" tkey="denisP"></p>
                 </div>
                 <div class="card-footer border border-0 text-center">
-                  <a href="https://www.linkedin.com/in/denys-roman-r-b8104b107/" class="btn btn-white">
+                  <a
+                    href="https://www.linkedin.com/in/denys-roman-r-b8104b107/"
+                    class="btn btn-white"
+                  >
                     <span class="fe fe-linkedin text-primary"></span>
                   </a>
                 </div>
@@ -168,11 +211,11 @@
             </div>
           </div>
         </div>
-      </div><!-- / .container -->
-    </div> <!-- / .main-content -->
+      </div>
+      <!-- / .container -->
+    </div>
+    <!-- / .main-content -->
 
-    @@include("partials/scripts.html")
-    @@include("partials/footer.html")
-
+    @@include("partials/scripts.html") @@include("partials/footer.html")
   </body>
 </html>
