@@ -34,7 +34,9 @@
   function initLanguage() {
     var langFromStore = localStorage.getItem('language');
 
-    langFromStore ? (langCode = langFromStore) : null;
+    if(langFromStore){
+      langCode = langFromStore
+    }
 
     $('#language-value').text(langCode.toUpperCase());
 
