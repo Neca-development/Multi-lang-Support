@@ -18,17 +18,18 @@
 
                       <!-- Pretitle -->
                       <h6 class="mb-4 text-uppercase text-secondary">
-                        Step 1 of 3
+                        <span tkey="step"></span> 1 <span tkey="of"></span> 3
                       </h6>
 
                       <!-- Title -->
-                      <h1 class="mb-3">
-                        Let’s get you a wallet
-                      </h1>
+                      <h1 class="mb-3" tkey="letsGetWalletTitle"></h1>
 
                       <!-- Subtitle -->
-                      <p class="mb-5 text-secondary">
-                        The simplest way to access PEAKDEFI is to create a wallet with PEAKDEFI app wallet. Learn why in our <a class="text-white" href="#faq">FAQ</a>.
+                      <p
+                        class="mb-5 text-secondary"
+                        tkey="letsGetWalletSubtitle"
+                      >
+                        <a class="text-white" href="#faq">FAQ</a>.
                       </p>
 
                     </div>
@@ -36,7 +37,7 @@
                   <div class="avatar avatar-lg d-block mx-auto mb-4">
                     <img src="@@webRoot/assets/img/logo.png" class="avatar-img rounded-circle bg-white" alt="PEAKDEFI App logo">
                   </div>
-                  <p class="text-secondary text-center small">Download the app</p>
+                  <p class="text-secondary text-center small" tkey="downloadApp"></p>
                   <div class="row no-gutters align-items-center justify-content-center mx-n3 mb-5">
                     <div class="col-auto col-lg-auto mb-lg-0">
                       <a href="https://apps.apple.com/app/peakdefi-wallet/id1526193527" target="_blank">
@@ -51,7 +52,7 @@
                       </a>
                     </div>
                   </div>
-                  <a href="javascript:void(0);" class="text-white text-center small mx-auto d-block" onclick="openInvestorPortal()">I have already a wallet <i class="fe fe-arrow-right"></i></a>
+                  <a href="javascript:void(0);" class="text-white text-center small mx-auto d-block" onclick="openInvestorPortal()" tkey="alreadyHaveWallet"><i class="fe fe-arrow-right"></i></a>
                   <div class="list-group list-group-flush d-block d-lg-none">
                     <div class="list-group-item border-0">
                       <div class="row">
@@ -66,8 +67,13 @@
 
                         </div>
                         <div class="col ml-n2">
-                          <p class="mb-0 text-white">
-                            PEAKDEFI exists on the <a href="https://ethereum.org/" target="_blank">Ethereum blockchain</a>, which uses similar technology to Bitcoin to guarantee that you own and control your assets. To interact with the Ethereum blockchain, you need a wallet like Argent.
+                          <p class="mb-0 text-white" tkey="faqBlockchainPOne">
+                            <a
+                              href="https://ethereum.org/"
+                              target="_blank"
+                              tkey="faqBlockchainPTwo"
+                            ></a>
+                            <span tkey="faqBlockchainPThree"></span>
                           </p>
                         </div>
                       </div> <!-- / .row -->
@@ -85,10 +91,7 @@
 
                         </div>
                         <div class="col ml-n2">
-                          <p class="mb-0 text-white">
-                            Transactions related to your PEAKDEFI operations on Ethereum cost “gas”, which are micro amounts of Ethereum’s native cryptocurrency (Ether).
-                          </p>
-
+                          <p class="mb-0 text-white" tkey="faqGasP"></p>
                         </div>
                       </div> <!-- / .row -->
                     </div>
@@ -102,19 +105,21 @@
                     <div class="col-auto">
 
                       <!-- Button -->
-                      <button class="btn btn-lg btn-white" type="reset">Cancel</button>
+                      <button class="btn btn-lg btn-white" type="reset" tkey="cancelButton"></button>
 
                     </div>
                     <div class="col text-center">
 
                       <!-- Step -->
-                      <h6 class="text-uppercase text-secondary mb-0">Step 1 of 3</h6>
+                      <h6 class="text-uppercase text-secondary mb-0">
+                        <span tkey="step"></span> 1 <span tkey="of"></span> 3
+                      </h6>
 
                     </div>
                     <div class="col-auto">
 
                       <!-- Button -->
-                      <a class="btn btn-lg bg-primary" data-toggle="wizard" href="#wizardStepTwo">Done</a>
+                      <a class="btn btn-lg bg-primary" data-toggle="wizard" href="#wizardStepTwo" tkey="doneButton"></a>
 
                     </div>
                   </div>
@@ -122,29 +127,19 @@
                   <!-- Divider -->
                   <hr class="my-5">
 
-                  <h2 id="faq">Frequently Asked Questions</h2>
+                  <h2 id="faq" tkey="faqTitle"></h2>
                   <div class="card card-inactive mb-6">
                     <div class="card-body">
-                      <h3>What is a wallet and why do I need one?</h3>
-                      <p class="text-secondary mb-4">
-                        A cryptocurrency wallet, comparable to a bank account, contains a pair of public and private cryptographic keys. The keys can be used to track ownership, receive or spend cryptocurrencies. A public key allows for other wallets to make payments to the wallet's address, whereas a private key enables the spending of cryptocurrency from that address.
-                      </p>
-                      <h3>Do I need an App to create a wallet?</h3>
-                      <p class="text-secondary mb-4">
-                        No, you can create a wallet without an app, e.g. on myetherwallet.com. Just make sure that you own your private keys.
-                      </p>
-                      <h3>Can I use another wallet?</h3>
-                      <p class="text-secondary mb-4">
-                        If you already have a wallet then you don’t have to create a new one. Just connect your wallet by clicking on “I have already a wallet” and you are ready.
-                      </p>
-                      <h3>Is PEAKDEFI App and PEAKDEFI Platform the same?</h3>
-                      <p class="text-secondary mb-4">
-                        Although PEAKDEFI App and the PEAKDEFI Platform belong to the same PEAK ecosystem, they are completely independent and have a different purpose. While the PEAKDEFI App enables you to create wallets and receive / send cryptocurrencies in an easy way, PEAKDEFI Platform allows you to invest in a decentralized Managed Fund to grow your capital and earn PEAK through staking.
-                      </p>
-                      <h3>Is it safe?</h3>
-                      <p class="text-secondary mb-4">
-                        The purpose of decentralization is transparency and security. In contrast to a managed fund on centralized exchanges, you are the only one who has access to your wallet. There are no middlemen, no third parties involved. Everything is managed autonomously through smart contracts.
-                      </p>
+                      <h3 tkey="faqWhatWalletT"></h3>
+                      <p class="text-secondary mb-4" tkey="faqWhatWalletP"></p>
+                      <h3 tkey="faqAppForWalletT"></h3>
+                      <p class="text-secondary mb-4" tkey="faqAppForWalletP"></p>
+                      <h3 tkey="faqAnotherWalletT"></h3>
+                      <p class="text-secondary mb-4" tkey="faqAnotherWalletP"></p>
+                      <h3 tkey="faqPeakT"></h3>
+                      <p class="text-secondary mb-4" tkey="faqPeakP"></p>
+                      <h3 tkey="faqSafeT"></h3>
+                      <p class="text-secondary mb-4" tkey="faqSafeP"></p>
                     </div>
                   </div>
 
@@ -157,18 +152,14 @@
 
                       <!-- Pretitle -->
                       <h6 class="mb-4 text-uppercase text-secondary">
-                        Step 2 of 3
+                        <span tkey="step"></span> 2 <span tkey="of"></span> 3
                       </h6>
 
                       <!-- Title -->
-                      <h1 class="mb-3">
-                        Buy crypto
-                      </h1>
+                      <h1 class="mb-3" tkey="buyCryptoTitle"></h1>
 
                       <!-- Subtitle -->
-                      <p class="mb-5 text-secondary">
-                        Investing on PEAKDEFI requires ETH (Ethereum’s native cryptocurrency) or ERC20 tokens. You can buy ETH or the supported ERC20 tokens with your credit card via the following services. Then, you are ready to invest on PEAKDEFI.
-                      </p>
+                      <p class="mb-5 text-secondary" tkey="buyCryptoP"></p>
 
                     </div>
                   </div>
@@ -209,19 +200,21 @@
                     <div class="col-auto">
 
                       <!-- Button -->
-                      <a class="btn btn-lg btn-white" data-toggle="wizard" href="#wizardStepOne">Back</a>
+                      <a class="btn btn-lg btn-white" data-toggle="wizard" href="#wizardStepOne" tkey="backButton"></a>
 
                     </div>
                     <div class="col text-center">
 
                       <!-- Step -->
-                      <h6 class="text-uppercase text-secondary mb-0">Step 2 of 3</h6>
+                      <h6 class="text-uppercase text-secondary mb-0">
+                        <span tkey="step"></span> 2 <span tkey="of"></span> 3
+                      </h6>
 
                     </div>
                     <div class="col-auto">
 
                       <!-- Button -->
-                      <a class="btn btn-lg bg-primary" data-toggle="wizard" href="#wizardStepThree">Done</a>
+                      <a class="btn btn-lg bg-primary" data-toggle="wizard" href="#wizardStepThree" tkey="doneButton"></a>
 
                     </div>
                   </div>
@@ -229,29 +222,19 @@
                   <!-- Divider -->
                   <hr class="my-5">
 
-                  <h2 id="faq">Frequently Asked Questions</h2>
+                  <h2 id="faq" tkey="faqTitle"></h2>
                   <div class="card card-inactive mb-6">
                     <div class="card-body">
-                      <h3>Why do I have to buy Cryptocurrencies to invest in the PEAKDEFI Fund?</h3>
-                      <p class="text-secondary mb-4">
-                        You invest in the PEAKDEFI Fund with cryptocurrency. You can invest with ETH or any other ERC20 token. If you don’t have any cryptocurrencies yet, you have to buy some first in order to invest in the PEAKDEFI Fund. If you have already ERC20 Tokens in your wallet, you can directly connect with your wallet and are ready to invest.
-                      </p>
-                      <h3>Can I invest in PEAKDEFI with Fiat Money?</h3>
-                      <p class="text-secondary mb-4">
-                        You can use Coinbase, Changelly, or Wyre to buy cryptocurrencies and then invest in PEAKDEFI with the bought crypto. Just make sure you purchase ETH or any ERC20 Token.
-                      </p>
-                      <h3>Can I use another option to buy Cryptocurrencies?</h3>
-                      <p class="text-secondary mb-4">
-                        There are just just options. You can use any other service to purchase cryptocurrencies.
-                      </p>
-                      <h3>I already have Cryptos in my Wallet, do I still have to buy some?</h3>
-                      <p class="text-secondary mb-4">
-                        If you have already ETH or ERC20 Tokens in your wallet then you can just connect this wallet with our platform and are ready to invest.
-                      </p>
-                      <h3>Do I have to pay fees when buying Cryptos?</h3>
-                      <p class="text-secondary mb-4">
-                        It depends on the service provider you use. Usually there is a transaction fee, in Ethereum called Gas fee, that you have to pay for the transaction to get through on the blockchain. The service provider can put on top an additional fee for its service.
-                      </p>
+                      <h3 tkey="faqCryptoT"></h3>
+                      <p class="text-secondary mb-4" tkey="faqCryptoP"></p>
+                      <h3 tkey="faqFiatT"></h3>
+                      <p class="text-secondary mb-4" tkey="faqFiatP"></p>
+                      <h3 tkey="faqOptionT"></h3>
+                      <p class="text-secondary mb-4" tkey="faqOptionP"></p>
+                      <h3 tkey="faqAlreadyT"></h3>
+                      <p class="text-secondary mb-4" tkey="faqAlreadyP"></p>
+                      <h3 tkey="faqPayT"></h3>
+                      <p class="text-secondary mb-4" tkey="faqPayP"></p>
                     </div>
                   </div>
 
@@ -264,13 +247,11 @@
 
                       <!-- Pretitle -->
                       <h6 class="mb-4 text-uppercase text-secondary">
-                        Step 3 of 3
+                        <span tkey="step"></span> 3 <span tkey="of"></span> 3
                       </h6>
 
                       <!-- Title -->
-                      <h1 class="mb-3">
-                        Connect your wallet to PEAKDEFI
-                      </h1>
+                      <h1 class="mb-3" tkey="connectWalletTitle"></h1>
 
                     </div>
                   </div> <!-- / .row -->
@@ -291,8 +272,14 @@
                         <div class="col ml-n2 d-flex align-items-center">
 
                           <!-- Heading -->
-                          <p class="mb-0 text-secondary">
-                            Open <a class="text-white" href="https://peakdefi.com">Peakdefi.com</a> on your laptop and look for the option to connect a wallet.
+                          <p
+                            class="mb-0 text-secondary"
+                            tkey="connectWalletOpen"
+                          >
+                            <a class="text-white" href="https://peakdefi.com"
+                              >Peakdefi.com</a
+                            >
+                            <span tkey="connectWalletStepOne"></span>
                           </p>
 
                         </div>
@@ -313,9 +300,7 @@
                         <div class="col ml-n2 d-flex align-items-center">
 
                           <!-- Heading -->
-                          <p class="mb-0 text-secondary">
-                            Select WalletConnect among the connect options. You will be presented with a QR code. Alternatively, you can connect with Metamask.
-                          </p>
+                          <p class="mb-0 text-secondary" tkey="connectWalletStepTwo"></p>
 
                         </div>
                       </div> <!-- / .row -->
@@ -335,9 +320,7 @@
                         <div class="col ml-n2 d-flex align-items-center">
 
                           <!-- Heading -->
-                          <p class="mb-0 text-secondary">
-                            Open your wallet app and tap Scan on your Assets screen at the top.
-                          </p>
+                          <p class="mb-0 text-secondary" tkey="connectWalletStepThree"></p>
 
                         </div>
                       </div> <!-- / .row -->
@@ -357,9 +340,7 @@
                         <div class="col ml-n2 d-flex align-items-center">
 
                           <!-- Heading -->
-                          <p class="mb-0 text-secondary">
-                            Scan the QR code. You will be prompted to authorize the Dapp in your app wallet.
-                          </p>
+                          <p class="mb-0 text-secondary" tkey="connectWalletStepFour"></p>
 
                         </div>
                       </div> <!-- / .row -->
@@ -371,19 +352,21 @@
                     <div class="col-auto">
 
                       <!-- Button -->
-                      <a class="btn btn-lg btn-white" data-toggle="wizard" href="#wizardStepTwo">Back</a>
+                      <a class="btn btn-lg btn-white" data-toggle="wizard" href="#wizardStepTwo" tkey="backButton"></a>
 
                     </div>
                     <div class="col text-center">
 
                       <!-- Step -->
-                      <h6 class="text-uppercase text-secondary mb-0">Step 3 of 3</h6>
+                      <h6 class="text-uppercase text-secondary mb-0">
+                        <span tkey="step"></span> 3 <span tkey="of"></span> 3
+                      </h6>
 
                     </div>
                     <div class="col-auto">
 
                       <!-- Button -->
-                      <a onclick="openInvestorPortal()" class="btn btn-lg bg-primary">Get started</a>
+                      <a onclick="openInvestorPortal()" class="btn btn-lg bg-primary" tkey="getStartedButton"></a>
 
                     </div>
                   </div>
@@ -391,29 +374,19 @@
                   <!-- Divider -->
                   <hr class="my-5">
 
-                  <h2 id="faq">Frequently Asked Questions</h2>
+                  <h2 id="faq" tkey="faqTitle"></h2>
                   <div class="card card-inactive mb-6">
                     <div class="card-body">
-                      <h3>I can’t connect my wallet, what can I do?</h3>
-                      <p class="text-secondary mb-4">
-                        If you can’t connect your wallet on the PEAKDEFI platform check the app that you are using for the connection, e.g. metamask. Maybe you entered a wrong password. Or it could be a temporary issue, then try to connect again after a few minutes.
-                      </p>
-                      <h3>Is there another way to login to my account?</h3>
-                      <p class="text-secondary mb-4">
-                        You can use any provided way to connect your wallet.
-                      </p>
-                      <h3>I forgot my Wallet Login Credentials, what can I do?</h3>
-                      <p class="text-secondary mb-4">
-                        PEAKDEFI doesn’t store any Wallet Information. Hence it cannot restore your Login Data. You as the owner of your wallet are responsible to keep your private keys in a safe place.
-                      </p>
-                      <h3>I already have Cryptos in my Wallet, do I still have to buy some?</h3>
-                      <p class="text-secondary mb-4">
-                        If you have already ETH or ERC20 Tokens in your wallet then you can just connect this wallet with our platform and are ready to invest.
-                      </p>
-                      <h3>Do I have to pay fees when buying Cryptos?</h3>
-                      <p class="text-secondary mb-4">
-                        It depends on the service provider you use. Usually there is a transaction fee, in Ethereum called Gas fee, that you have to pay for the transaction to get through on the blockchain. The service provider can put on top an additional fee for its service.
-                      </p>
+                      <h3 tkey="faqConnectT"></h3>
+                      <p class="text-secondary mb-4" tkey="faqConnectP"></p>
+                      <h3 tkey="faqLoginT"></h3>
+                      <p class="text-secondary mb-4" tkey="faqLoginP"></p>
+                      <h3 tkey="faqForgotT"></h3>
+                      <p class="text-secondary mb-4" tkey="faqForgotP"></p>
+                      <h3 tkey="faqAlreadyT"></h3>
+                      <p class="text-secondary mb-4" tkey="faqAlreadyP"></p>
+                      <h3 tkey="faqPayT"></h3>
+                      <p class="text-secondary mb-4" tkey="faqPayP"></p>
                     </div>
                   </div>
 
@@ -426,7 +399,7 @@
           <div class="bg-white vh-100 p-4">
             <div class="row justify-content-center">
               <div class="col-10">
-                <h2 class="text-dark">The Ethereum blockchain</h2>
+                <h2 class="text-dark" tkey="ethBHTitle"></h2>
                 <div class="list-group list-group-flush">
                   <div class="list-group-item border-0">
                     <div class="row">
@@ -443,8 +416,14 @@
                       <div class="col ml-n2">
 
                         <!-- Heading -->
-                        <p class="mb-0 text-secondary">
-                          PEAKDEFI exists on the <a href="https://ethereum.org/" target="_blank">Ethereum blockchain</a>, which uses similar technology to Bitcoin to guarantee that you own and control your assets. To interact with the Ethereum blockchain, you need a wallet like Argent.
+                        <p class="text-secondary mb-4" tkey="faqBlockchainPOne">
+                          <a
+                            class="text-white"
+                            href="https://ethereum.org/"
+                            target="_blank"
+                            tkey="faqBlockchainPTwo"
+                          ></a>
+                          <span tkey="faqBlockchainPThree"></span>
                         </p>
 
                       </div>
@@ -465,9 +444,7 @@
                       <div class="col ml-n2">
 
                         <!-- Heading -->
-                        <p class="mb-0 text-secondary">
-                          Transactions related to your PEAKDEFI operations on Ethereum cost “gas”, which are micro amounts of Ethereum’s native cryptocurrency (Ether).
-                        </p>
+                        <p class="mb-0 text-secondary" tkey="faqGasP"></p>
 
                       </div>
                     </div> <!-- / .row -->
