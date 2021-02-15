@@ -1,6 +1,6 @@
 (function () {
   var langCode = navigator.language.substr(0, 2);
-  var langs = ['en', 'ru', 'kz', 'jp'];
+  var langs = ['en', 'es', 'ru', 'ua', 'vi', 'cn', 'jp', 'kr'];
 
   initLanguage();
 
